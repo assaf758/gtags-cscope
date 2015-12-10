@@ -1,2 +1,2 @@
 # gtags-cscope
-gtags cscope vim script
+gtags-cscope.vim from gnu global https://www.gnu.org/software/global/manual/global.html
