@@ -196,7 +196,9 @@ function! s:GtagsCscope()
     " auto update tags
     "
     if g:GtagsCscope_Auto_Update == 1
-            :autocmd! BufWritePost * call s:GtagsCscopeAutoUpdate()
+        augroup gtags-cscope
+            autocmd BufWritePost * call s:GtagsCscopeAutoUpdate()
+        augroup END
     endif
 
     "
