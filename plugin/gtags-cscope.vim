@@ -155,8 +155,8 @@ function! s:GtagsCscope_GtagsRoot()
     if v:shell_error != 0
         if v:shell_error != 3
             "call s:Error('GTAGS not found.')
-        "else
-            call s:Error('global command failed. command line: ' . cmd)
+        else
+            "call s:Error('global command failed. command line: ' . cmd)
         endif
         return ''
     endif
